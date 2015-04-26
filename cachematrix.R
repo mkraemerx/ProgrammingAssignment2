@@ -35,6 +35,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## computation function for inverse matrix with caching (see above)
+##
+## Side-Note: The additional arguments ... in my opinion absolutely make
+## no sense here, it could even give wrong results in combination with the
+## cache. But since there were given in the template, I let them where
+## they were.
 cacheSolve <- function(x, ...) {
     #read the cache
     inv <- x$getinverse()
